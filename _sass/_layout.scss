@@ -239,3 +239,10 @@
         }
     }
 }
+
+.page-link {
+  padding : 3px;
+
+  &.object { background: rgb(255, 176, 228); }
+  &.project { background: rgb(255, 247, 139); }
+}

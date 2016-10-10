@@ -1,6 +1,7 @@
 ---
 layout: page
 title: wekeypedia
+category: project
 ---
 
 Le projet Wekeypedia est essentiellement un travail sur les chemins de connaissance et d’apprentissage qui a donné lieu à une suite d’expérimentations et de prototypes qui ont également permis d’ouvrir des pistes de réflexions dans le domaine des technologies éducatives, technologies de l’employabilité et de la documentation ouverte de projets exploratifs scientifiques.

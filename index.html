@@ -18,7 +18,7 @@ layout: default
     {% endif %}
 
     {% if page.title != null %}
-      <li><a class="page-link" href="{{ page.url }}">{{ page.title }}</a></li>
+      <li><a class="page-link {{ page.category | join: " " }}" href="{{ page.url }}">{{ page.title }}</a></li>
     {% endif %}
 
   {% endfor %}

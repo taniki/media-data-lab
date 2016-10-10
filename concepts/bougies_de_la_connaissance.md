@@ -1,6 +1,7 @@
 ---
 layout: page
 title: les bougies de la connaissance
+category: project
 ---
 
 Les _bougies de la connaissance_ (ou _knowledge candles_) sont un concept que nous essayons de rendre opérationel au sein du [CRI](http://cri-paris.org).
