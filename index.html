@@ -4,29 +4,40 @@ layout: default
 
 <div class="home">
 
-  <h1>Pages</h1>
+  {% assign letter = "" %}
+  {% assign pages = site.pages | sort : "title" %}
 
-  {% for page in site.pages %}
-    {% if page.title %}
-    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+  {% for page in pages %}
+    {% assign l = page.title | slice : 0 %}
+
+    {% if letter == l %}
+    {% else %}
+      {% assign letter = l %}
+
+      <h2>{{ letter }}</h2>
     {% endif %}
+
+    {% if page.title != null %}
+      <li><a class="page-link" href="{{ page.url }}">{{ page.title }}</a></li>
+    {% endif %}
+
   {% endfor %}
 
 
-  <h1 class="page-heading">Posts</h1>
+<!--   <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+    </li>
+  {% endfor %}
+</ul> -->
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<!--   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
 </div>

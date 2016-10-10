@@ -10,6 +10,5 @@ url: "http://cri.11d.im" # the base hostname & protocol for your site
 twitter_username: taniki
 github_username:  taniki
 permalink: "/:year/:month/:day/:title.html"
-
 # Build settings
 markdown: kramdown
